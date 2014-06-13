@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test audio label</title>
+</head>
+<body>
+<div>
+	<audio id="audio1" width="420" controls="controls">
+	  <source src="Test.mp3" type="audio/mp3"></source>
+	  <label>Your browser does not support the audio tag.</label>
+	</audio>
+	<button id="play" onclick="playAndStop()">play</button>
+</div>
+<script type="text/javascript">
+var myAudio = document.getElementById("audio1");
+	function playAndStop(){
+		if(myAudio.paused){
+			myAudio.play();
+			play.innerHTML="Pause";
+		}else{
+			myAudio.pause();
+			play.innerHTML="Play";
+		}
+	}
+</script>
+</body>
+</html>

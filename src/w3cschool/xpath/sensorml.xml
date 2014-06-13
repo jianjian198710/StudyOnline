@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sml:SensorML version="1.0.1"
+	xsi:schemaLocation="http://www.opengis.net/sensorML/1.0.1 http://schemas.opengis.net/sensorML/1.0.1/sensorML.xsd"
+	xmlns:sml="http://www.opengis.net/sensorML/1.0.1" xmlns:swe="http://www.opengis.net/swe/1.0.1"
+	xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <sml:member>
+               <sml:System>
+                    <gml:description>A sensor in the Sensor Bus</gml:description>
+                    <sml:keywords>
+                         <sml:KeywordList>
+                              <sml:keyword>sensor bus</sml:keyword>
+                         </sml:KeywordList>
+                    </sml:keywords>
+                    <!--sml:identification element must contain the ID of the sensor-->
+                    <sml:identification>
+                         <sml:IdentifierList>
+                              <sml:identifier>
+                                   <sml:Term definition="urn:ogc:def:identifier:OGC:uniqueID">
+                                        <sml:value>Sensor-10</sml:value>
+                                   </sml:Term>
+                              </sml:identifier>
+                              <sml:identifier name="longName">
+                                   <sml:Term definition="urn:ogc:def:identifier:OGC:longName">
+                                        <sml:value>beiju</sml:value>
+                                   </sml:Term>
+                              </sml:identifier>
+                              <sml:identifier name="shortName">
+                                   <sml:Term definition="urn:ogc:def:identifier:OGC:shortName">
+                                        <sml:value>playstation</sml:value>
+                                   </sml:Term>
+                              </sml:identifier>
+                         </sml:IdentifierList>
+                    </sml:identification>
+                    <!--classification dummy-->
+                    <sml:classification>
+                         <sml:ClassifierList>
+                              <sml:classifier name="intendedApplication">
+                                   <sml:Term definition="urn:ogc:def:classifier:OGC:1.0:application">
+                                        <sml:value>EO</sml:value>
+                                   </sml:Term>
+                              </sml:classifier>
+                              <sml:classifier name="sensorType">
+                                   <sml:Term definition="urn:ogc:def:classifier:OGC:1.0:sensorType">
+                                        <sml:value>sensor bus sensor</sml:value>
+                                   </sml:Term>
+                              </sml:classifier>
+                         </sml:ClassifierList>
+                    </sml:classification>
+                    <!--sml:validTime-->
+                    <sml:validTime>
+                         <gml:TimePeriod>
+                              <gml:beginPosition>2011-01-01</gml:beginPosition>
+                              <gml:endPosition>2012-02-02</gml:endPosition>
+                         </gml:TimePeriod>
+                    </sml:validTime>
+                    <!--sml:capabilities element has to contain status and mobility information-->
+                    <sml:capabilities>
+                         <swe:DataRecord>
+                              <swe:field name="samplingTime">
+                                   <swe:Time definition="urn:ogc:def:property:OGC:Time">
+                                        <swe:uom code="s"/>
+                                        <swe:value>1000</swe:value>
+                                   </swe:Time>
+                              </swe:field>
+                              <!--status indicates, whether sensor is collecting data at the moment 
+						(true) or not (false)-->
+                              <swe:field name="status">
+                                   <swe:Boolean definition="urn:ogc:def:property:OGC:1.0:isActive">
+                                        <swe:value>true</swe:value>
+                                   </swe:Boolean>
+                              </swe:field>
+                              <!--status indicates, whether sensor is mobile (true) or fixed (false)-->
+                              <swe:field name="mobile">
+                                   <swe:Boolean definition="urn:ogc:def:property:OGC:1.0:isMobile">
+                                        <swe:value>false</swe:value>
+                                   </swe:Boolean>
+                              </swe:field>
+                              <!--BEGIN CUSTOM FIELD-->
+                              <swe:field name="battery">
+                                   <swe:Text definition="urn:custom_field:mobile">
+                                        <swe:value>0.5</swe:value>
+                                   </swe:Text>
+                              </swe:field>
+                              <!--END CUSTOM FIELD-->
+                         </swe:DataRecord>
+                    </sml:capabilities>
+                    <!--contact dummy-->
+                    <sml:contact>
+                         <sml:ResponsibleParty gml:id="IfGI_Sensor_Bus">
+                              <sml:individualName>Arne Broering</sml:individualName>
+                              <sml:organizationName>Institute for Geoinformatics - University of Muenster - Sensor Web and Simulation Lab</sml:organizationName>
+                              <sml:contactInfo>
+                                   <sml:address>
+                                        <sml:deliveryPoint>Weseler Strasse253</sml:deliveryPoint>
+                                        <sml:city>Muenster</sml:city>
+                                        <sml:postalCode>48151</sml:postalCode>
+                                        <sml:country>Germany</sml:country>
+                                        <sml:electronicMailAddress>swsl-ifgi@listserv.uni-muenster.de</sml:electronicMailAddress>
+                                   </sml:address>
+                              </sml:contactInfo>
+                         </sml:ResponsibleParty>
+                    </sml:contact>
+                    <!--last measured position of sensor-->
+                    <sml:position name="sensorPosition">
+                         <swe:Position referenceFrame="urn:ogc:def:crs:EPSG:4326">
+                              <!--default to use: urn:ogc:def:crs:EPSG:4326-->
+                              <swe:location>
+                                   <swe:Vector gml:id="STATION_LOCATION">
+                                        <swe:coordinate name="easting">
+                                             <swe:Quantity axisID="x">
+                                                  <swe:uom code="degree"/>
+                                                  <swe:value>121.46789254497689</swe:value>
+                                             </swe:Quantity>
+                                        </swe:coordinate>
+                                        <swe:coordinate name="northing">
+                                             <swe:Quantity axisID="y">
+                                                  <swe:uom code="degree"/>
+                                                  <swe:value>31.231222671854475</swe:value>
+                                             </swe:Quantity>
+                                        </swe:coordinate>
+                                        <swe:coordinate name="altitude">
+                                             <swe:Quantity axisID="z">
+                                                  <swe:uom code="m"/>
+                                                  <swe:value>86.02</swe:value>
+                                             </swe:Quantity>
+                                        </swe:coordinate>
+                                   </swe:Vector>
+                              </swe:location>
+                         </swe:Position>
+                    </sml:position>
+                    <!--just mapping inputs to outputs-->
+                    <sml:inputs>
+                         <sml:InputList>
+                              <sml:input name="temp">
+                                   <swe:ObservableProperty definition="temperature"/>
+                              </sml:input>
+                         </sml:InputList>
+                    </sml:inputs>
+                    <!--list containing the output phenomena of this sensor system; ATTENTION: 
+				these phenomena are parsed and inserted into the database; they have to contain 
+				offering elements to determine the correct offering for the sensors and measured 
+				phenomena-->
+                    <sml:outputs>
+                         <sml:OutputList>
+                              <sml:output name="temp">
+                                   <swe:Quantity definition="temperature">
+                                        <gml:metaDataProperty>
+                                                  <name>temperature</name>
+                                        </gml:metaDataProperty>
+                                        <swe:uom code="degree"/>
+                                   </swe:Quantity>
+                              </sml:output>
+                         </sml:OutputList>
+                    </sml:outputs>
+               </sml:System>
+	</sml:member>
+</sml:SensorML>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<canvas id="mycanvas" width="200px" height="100px" onmousemove="showCoordinates(event)" onmouseout="clear()"></canvas>
+<div id="xycoordinates"></div>
+<script>
+	var mycanvas = document.getElementById("mycanvas");
+	var ctx = mycanvas.getContext("2d");
+	ctx.fillStyle="#FF0000";
+	ctx.fillRect(0,0,200,100);
+	
+	function showCoordinates(e){
+		 x = e.clientX;
+		 y = e.clientY;
+		 document.getElementById("xycoordinates").innerHTML="Coordinates: (" + x + "," + y + ")";
+	}
+	
+	function clear(){
+		document.getElementById("xycoordinates").innerHTML="";
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>SVG Test</title>
+		<style type="text/css">
+			html,body{height:100%;}
+			body{margin:0px;}
+			svg{background:red;width:100%;height:100%}
+		</style>
+		<meta charset="UTF-8">
+		<SCRIPT type="text/javascript">
+			var go = function(svg){
+				svg.style.background="gray";
+				var path=document.createElementNS("http://www.w3.org/2000/svg","path");
+				path.setAttribute("d","M 15 2 L 20 18 M 30 20 L 40 30 C 80 10 100 100 80 150 Z");
+				path.setAttribute("stroke","red");
+				svg.appendChild(path);
+			};
+		</SCRIPT>
+	</head>
+	<body onload="javascript: go(document.getElementsByTagName('svg')[0]);">
+		<svg xmlns="http://www.w3.org/2000/svg">
+			<!-- stroke是轮廓  transform执行的顺序是反向的-->
+			<g>
+				<rect x="4" y="6" width="100" height="200" fill="green" stroke="blue" stroke-width="20" transform="translate(20,30) rotate(45) scale(0.3)" rx="3" ry="5"/>
+				<line x1="120" y1="20" x2="200" y2="30" stroke="black"/>
+			<g>
+			<circle cx="200" cy="150" r="50"/>
+			<!-- Move到2 2 然后画线到20 18 大写是绝对坐标 小写是相对坐标 Z回到原点2 2-->
+			<path d="M 2 2 L 20 18 L 0 30 Z" stroke="green"/>
+			<!-- <path d="M 15 2 L 20 18 M 30 20 L 40 30 C 80 10 100 100 80 150 Z" stroke="red"> -->
+			<text x="20" y="50" text-anchor="start" dominant-baseline="hanging">jianjian</text>	
+		</svg>
+	</body>
+</html>
