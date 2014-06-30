@@ -18,7 +18,12 @@ import java.util.Optional;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
+import java.lang.annotation.ElementType;
 import java.lang.annotation.Repeatable;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
 import org.junit.Test;
 
 /*
@@ -281,14 +286,19 @@ public class Java8Tutorial{
 	//TODO something wrong with this
 	@Test
 	public void test15(){
-		Hint hint = School.class.getAnnotation(Hint.class);
-		System.out.println(hint);
+		Hint hint0 = School.class.getAnnotation(Hint.class);
+		System.out.println(hint0);
 		
-//		Hints hints1 = School2.class.getAnnotation(Hints.class);
-//		System.out.println(hints1.value().length);
+		Hints hints1 = School2.class.getAnnotation(Hints.class);
+		System.out.println(hints1.value()[0].value());
 		 
 		Hint[] hints2 = School.class.getAnnotationsByType(Hint.class);
 		System.out.println(hints2.length); 
+		
+		for(Hint hint:hints2){
+			System.out.println(hint.value());
+		}
+		
 	}
 }
 
@@ -330,10 +340,14 @@ interface PersonFactory<P extends Person> {
     P create(String firstName, String lastName);
 }
 
+@Target( ElementType.TYPE )
+@Retention( RetentionPolicy.RUNTIME )
 @interface Hints {
     Hint[] value();
 }
- 
+
+@Target( ElementType.TYPE )
+@Retention( RetentionPolicy.RUNTIME )
 @Repeatable(Hints.class)
 @interface Hint {
     String value();
