@@ -13,6 +13,8 @@ import java.lang.reflect.Parameter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Locale.Category;
+import java.util.Optional;
 import java.util.function.Supplier;
 
 import org.junit.Test;
@@ -87,7 +89,7 @@ public class Java8Features{
 	 */
 	@Test
 	public void test1(){
-		//第一种方法引用是构造器引用,它的语法是Class::new
+		//第一种方法引用是构造器引用,它的语法是Class::new 通过构造函数引用 将create与Car的构造函数绑定
 		CarFactory carFactory = Car::new;
 		Car car = carFactory.create("Bens");
 		System.out.println(car);
@@ -113,6 +115,9 @@ public class Java8Features{
 		}
 	}
 	
+	/*
+	 * 3.1参数名字
+	 */
 	@Test
 	public void test3() throws NoSuchMethodException, SecurityException{
 		Method method = Java8Features.class.getMethod( "say",String.class);
@@ -126,6 +131,52 @@ public class Java8Features{
 	
 	public String say(String s){
 		return "say"+s;
+	}
+	
+	/*
+	 * 4.1 Optional
+	 */
+	@Test
+	public void test4(){
+		Optional<String> fullname = Optional.ofNullable(null);
+		//如果Optional类的实例为非空值的话，isPresent()返回true，否从返回false
+		System.out.println("Full name is set? "+fullname.isPresent());
+		//为了防止Optional为空值，orElseGet()方法通过回调函数来产生一个默认值
+		System.out.println("Full name: "+fullname.orElseGet(()->"[None]"));
+		//orElse()方法和orElseGet()方法类似，但是orElse接受一个默认值而不是一个回调函数
+		System.out.println(fullname.map(s -> "Hello "+s+"!").orElse("Hello Stranger!"));
+	}
+	
+	/*
+	 * 4.2 Stream
+	 */
+	private enum Sex{
+		Male,Female
+	}
+	
+	private static final class Cat{
+		private Sex sex;
+		private Integer age;
+		public Cat(final Sex sex,final Integer age){
+			this.sex = sex;
+			this.age = age;
+		}
+		public Sex getSex(){
+			return sex;
+		}
+		
+		public Integer getAge(){
+			return age;
+		}
+	}
+	
+	@Test
+	public void test5(){
+		List<Cat> cats = new ArrayList<Cat>();
+		cats.add(new Cat(Sex.Male,25));
+		cats.add(new Cat(Sex.Female,26));
+		cats.add(new Cat(Sex.Male,24));
+		System.out.println(cats.stream().filter(cat -> cat.getSex() == Sex.Male).mapToInt(Cat::getAge).sum());
 	}
 }
 
