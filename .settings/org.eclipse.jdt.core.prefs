@@ -1,6 +1,13 @@
 eclipse.preferences.version=1
 org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+<<<<<<< Updated upstream
 org.eclipse.jdt.core.compiler.codegen.methodParameters=generate
+=======
+<<<<<<< Updated upstream
+=======
+org.eclipse.jdt.core.compiler.codegen.methodParameters=do not generate
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8
 org.eclipse.jdt.core.compiler.codegen.unusedLocal=preserve
 org.eclipse.jdt.core.compiler.compliance=1.8

@@ -1,5 +1,6 @@
 package javamail;
 
+import java.util.Date;
 import java.util.Properties;
 
 import javax.mail.Address;
@@ -27,10 +28,10 @@ public class SendMailTest{
     private final static String IS_ENABLED_DEBUG_MOD = "true"; 
      
     // 发件人 
-//    private static final String from = "lampard.zhu@ericsson.com"; 
+    private static final String from = "jianjian198710@163.com"; 
  
     // 收件人 
-    private static final String to = "lampard.zhu@ericsson.com"; 
+    private static final String to = "51488384@qq.com"; 
      
     // 初始化连接邮件服务器的会话信息 
     private static Properties props = null; 
@@ -42,18 +43,19 @@ public class SendMailTest{
         props.setProperty("mail.smtp.port", PORT); 
         props.setProperty("mail.smtp.auth", IS_AUTH); 
         props.setProperty("mail.debug",IS_ENABLED_DEBUG_MOD); 
-//        props.put("mail.smtp.ssl.enable", "true");
-        
-//        props.setProperty("proxySet","true"); 
-//        props.setProperty("ProxyHost","www-proxy.ericsson.se"); 
-//        props.setProperty("ProxyPort","8080"); 
+        //Proxy
+//        props.setProperty("proxySet", "true");
+//        props.setProperty("http.proxyHost", "10.10.0.96");   
+//        props.setProperty("http.proxyPort", "8080");  
     }
     
     public void SendTextMail() throws MessagingException{
     	Session session = Session.getDefaultInstance(props); 
     	Message msg = new MimeMessage(session);
+    	msg.setSubject("Hello JavaMail!");
     	msg.setText("This is test email!");
-//    	msg.setFrom(new InternetAddress(from));
+    	msg.setSentDate(new Date());
+    	msg.setFrom(new InternetAddress(from));
     	Transport transport = session.getTransport();
     	transport.connect("jianjian198710@163.com", "198710");
     	transport.sendMessage(msg, new Address[] {new InternetAddress(to)});
