@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div ng-app ng-controller="priceController">
+		<input type="number" ng-model="quantity"/>
+		<input type="number" ng-model="price"/>
+		<p>Total={{(quantity * price)|currency}}</p>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script type="text/javascript">
+		function priceController($scope){
+			$scope.quantity=0;
+			$scope.price=0;
+		}
+	</script>
+</body>
+</html>

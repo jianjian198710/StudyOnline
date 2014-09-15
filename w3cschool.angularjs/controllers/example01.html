@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Example04_Controller</title>
+</head>
+<body>
+	<div ng-app ng-controller="personController">
+	FirstName: <input type="text" ng-model="firstName"/><br/>
+	LastName: <input type="text" ng-model="lastName"/><br/>
+	Full Name: {{firstName + " " + lastName}}
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script type="text/javascript">
+	    /*The function personController is a standard JavaScript object constructor.*/
+		function personController($scope){
+			$scope.firstName="Frank";
+			$scope.lastName="Lampard"
+		}	
+	</script>
+</body>
+</html>

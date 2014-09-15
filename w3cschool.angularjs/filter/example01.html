@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div ng-app ng-controller="personController">
+		<!-- Filter the lastname to uppercase -->
+		<p>The name is {{person.lastName | uppercase }}
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script src="personController.js"></script>
+</body>
+</html>
