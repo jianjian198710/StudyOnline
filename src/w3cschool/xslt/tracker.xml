@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="tracker.xsl"?>
+<blocks>
+	<block name="oab">
+		<module name="/vobs/ims/sbg/src/sgc/oab/src/oabLib.erl"
+			target_version="HEAD" reference_version="5ae34">
+			<function name="delete_bgf/3">
+				<caseinfo>
+					<suite name="sbg_ft_cba_pm_suite">
+						<group name="pcscf">
+							<case>pcscf_1_001</case>
+							<case>pcscf_1_002</case>
+						</group>
+					</suite>
+				</caseinfo>
+			</function>
+			<function name="cao/3">
+				<caseinfo>
+					<suite name="sbg_ft_cba_pm_suite">
+						<group name="pcscf">
+							<case>cao_1_001</case>
+							<case>cao_1_002</case>
+						</group>
+					</suite>
+				</caseinfo>
+			</function>
+		</module>
+		<module name="/vobs/ims/sbg/src/sgc/oab/src/oabAction.erl"
+			target_version="HEAD" reference_version="5ae34">
+			<function name="add_bgf/3">
+				<caseinfo>
+					<suite name="sbg_ft_cba_pm_suite">
+						<group name="icscf">
+							<case>icscf_1_003</case>
+							<case>icscf_1_004</case>
+							<case>icscf_1_005</case>
+						</group>
+					</suite>
+				</caseinfo>
+			</function>
+		</module>
+	</block>
+	<block name="b2b" />
+	<block name="pmf" >
+		<module name="/vobs/ims/sbg/src/syf/pmf/src/pmfLib.erl"
+			target_version="HEAD" reference_version="5ae34">
+			<function name="update_counter/3">
+				<caseinfo>
+					<suite name="sbg_ft_cba_pm_suite">
+						<group name="icscf">
+							<case>diao_1_003</case>
+							<case>diao_1_004</case>
+							<case>diao_1_005</case>
+							<case>diao_1_005</case>
+						</group>
+					</suite>
+				</caseinfo>
+			</function>
+		</module>
+	</block>	
+</blocks>

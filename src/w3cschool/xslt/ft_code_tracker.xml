@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suites>
+<suite name="sbg_ft_cba_cm_framework_SUITE">
+	<group name="sc_group">
+		<case name="cba_cm_framework_merge_001">
+			<funcinfo>sbgFtNetconfSupport:delete_diameter_realm/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:is_stam/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_diameter_realm/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:which_scenario/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnLib:make_moref/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnLib:validate_mask/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnLib:check_ip_address/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnAllowedSourcesProfile:check_profile_exist/1@@2-->4@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:read_ipsec_counter/2@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_fm_SUITE">
+	<group name="pcscf_1bgf">
+		<case name="sbg_cba_alarm_robustness_pl_restart_001">
+			<funcinfo>sbgFtNetconfSupport:delete_diameter/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_diameter_realm/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_diameter_instance/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnLib:make_moref/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnLib:check_ip_address/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnCounters:read_ipsec_counter/2@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_fm_SUITE">
+	<group name="no_pcscf">
+		<case name="sbg_cba_mated_pair_failure_alarm">
+			<funcinfo>sbgFtSupport:get_logs/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:filter_alertLog/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_pm_SUITE">
+	<group name="ibcf_nobgf_2">
+		<case name="cba_pm_13_031">
+			<funcinfo>sbgFtSupport:get_ip_address_tuple/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:all_is_passed/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:random_is_passed/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_result/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:ip_address_as_string/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_pm_SUITE">
+	<group name="ibcf_nobgf_2">
+		<case name="cba_pm_13_032">
+			<funcinfo>sbgFtSupport:get_ip_address_tuple/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:all_is_passed/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:random_is_passed/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_result/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:ip_address_as_string/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_pm_SUITE">
+	<group name="ibcf_nobgf_2">
+		<case name="cba_pm_13_033">
+			<funcinfo>sbgFtSupport:get_ip_address_tuple/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:all_is_passed/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:random_is_passed/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_result/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:ip_address_as_string/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_pm_SUITE">
+	<group name="ibcf_nobgf_2">
+		<case name="cba_pm_13_034">
+			<funcinfo>sbgFtSupport:get_ip_address_tuple/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:all_is_passed/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:random_is_passed/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_result/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:ip_address_as_string/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_pm_SUITE">
+	<group name="ibcf_nobgf_2">
+		<case name="cba_pm_13_035">
+			<funcinfo>sbgFtSupport:get_ip_address_tuple/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:all_is_passed/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:random_is_passed/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_result/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:ip_address_as_string/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_pm_SUITE">
+	<group name="ibcf_nobgf_2">
+		<case name="cba_pm_13_036">
+			<funcinfo>sbgFtSupport:get_ip_address_tuple/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:all_is_passed/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:random_is_passed/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_result/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:ip_address_as_string/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_pm_SUITE">
+	<group name="ibcf_nobgf_2">
+		<case name="cba_pm_13_037">
+			<funcinfo>sbgFtSupport:get_ip_address_tuple/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:all_is_passed/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:random_is_passed/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_result/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:ip_address_as_string/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_pm_SUITE">
+	<group name="ibcf_nobgf_2">
+		<case name="cba_pm_13_038">
+			<funcinfo>sbgFtSupport:recv_pta_sync/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_ip_address_tuple/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:all_is_passed/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:send_pta_sync/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:random_is_passed/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_result/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:ip_address_as_string/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_pm_SUITE">
+	<group name="ibcf_nobgf_2">
+		<case name="cba_pm_13_039">
+			<funcinfo>sbgFtSupport:get_ip_address_tuple/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:all_is_passed/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:random_is_passed/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_result/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:ip_address_as_string/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_pm_SUITE">
+	<group name="ibcf_nobgf_2">
+		<case name="cba_pm_13_040">
+			<funcinfo>sbgFtSupport:get_ip_address_tuple/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:all_is_passed/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:random_is_passed/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_result/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:ip_address_as_string/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_pm_SUITE">
+	<group name="ibcf_nobgf_2">
+		<case name="cba_pm_13_042">
+			<funcinfo>sbgFtSupport:get_ip_address_tuple/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:all_is_passed/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:random_is_passed/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_result/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:ip_address_as_string/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_pm_SUITE">
+	<group name="ibcf_nobgf_2">
+		<case name="cba_pm_13_043">
+			<funcinfo>sbgFtSupport:get_ip_address_tuple/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:all_is_passed/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:random_is_passed/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_result/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:ip_address_as_string/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_pm_SUITE">
+	<group name="ibcf_nobgf_2">
+		<case name="cba_pm_13_044">
+			<funcinfo>sbgFtSupport:get_ip_address_tuple/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:all_is_passed/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:random_is_passed/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_result/3@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:ip_address_as_string/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_signaling_trace_SUITE">
+	<group name="ibcf">
+		<case name="sig_trace_invite_ibcf_1_006">
+			<funcinfo>sbgFtSupport:recv_pta_sync/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_ip_address_tuple/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_type_inet/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:is_stam/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_config/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:send_pta_sync/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:ip_address_as_string/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnLib:make_moref/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_signaling_trace_SUITE">
+	<group name="aalg">
+		<case name="sig_trace_multi_event_aalg_1_001">
+			<funcinfo>sbgFtSupport:is_stam/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:read_ipsec_counter/2@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_cba_sm_SUITE">
+	<group name="robust">
+		<case name="cba_sm_13_003">
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_ec_VoLTE_SUITE">
+	<group name="pcscf_ext_bgf_ipv6">
+		<case name="ec_volte_emg_reg_on_emg_bearer_004">
+			<funcinfo>sbgFtNetconfSupport:get_type_inet/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:is_stam/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnLib:make_moref/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnAllowedSourcesProfile:check_profile_exist/1@@2-->4@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:read_ipsec_counter/2@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_ecscf_redirect_SUITE">
+	<group name="dns_geored">
+		<case name="sbg_ecscf_redirect_2_018">
+			<funcinfo>sbgFtNetconfSupport:get_bgf_status/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_bgf_status/4@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_type_inet/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:is_stam/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:poll_with_mfa/4@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:which_scenario/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>oabGwAction:al/7@@6-->4@@etxtopi eybccfk</funcinfo>
+			<funcinfo>sgnCounters:read_ipsec_counter/2@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_esrvcc_new_SUITE">
+	<group name="cs_netw_ipv4">
+		<case name="esrvcc_7_2_007">
+			<funcinfo>sbgFtNetconfSupport:get_bgf_status/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:do_modify_sip_netw_conn_params/4@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_bgf_status/4@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_sip_path_by_mo/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_type_inet/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:is_stam/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:poll_with_mfa/4@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:which_scenario/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnLib:make_moref/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>oabGwAction:al/7@@6-->4@@etxtopi eybccfk</funcinfo>
+			<funcinfo>sgnCounters:read_ipsec_counter/2@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_esrvcc_new_SUITE">
+	<group name="cs_netw_ipv4">
+		<case name="esrvcc_37_1_003">
+			<funcinfo>sbgFtNetconfSupport:get_bgf_status/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:lock_unlock_sip/3@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:do_modify_sip_netw_conn_params/4@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_bgf_status/4@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_sip_path_by_mo/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_type_inet/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:is_stam/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:poll_with_mfa/4@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:which_scenario/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnLib:make_moref/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnCounters:read_ipsec_counter/2@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+			<funcinfo>oabGwAction:al/7@@6-->4@@etxtopi eybccfk</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_netconf_edit_config_SUITE">
+	<group name="pcscf">
+		<case name="netconf_03_099">
+			<funcinfo>sbgFtNetconfSupport:delete_diameter/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:is_stam/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_diameter_realm/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_diameter_instance/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnLib:check_ip_address/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnLib:make_moref/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnLib:validate_mask/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>chaServer:remove_data_for_internal_key/1@@2-->6@@xemihol xemihol</funcinfo>
+			<funcinfo>sgnCounters:read_ipsec_counter/2@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_netconf_edit_config_SUITE">
+	<group name="aalg">
+		<case name="netconf_03_194">
+			<funcinfo>sbgFtNetconfSupport:delete_diameter_realm/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:delete_diameter/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:smmfilter_attr_format/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:is_stam/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_diameter_realm/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_diameter_instance/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnLib:make_moref/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnLib:open_firewall/12@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnLib:check_ip_address/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnAllowedSourcesProfile:check_profile_exist/1@@2-->4@@imssbgci</td></funcinfo>
+			<funcinfo>sysFirewallNetConfig:is_profile/1@@2-->3@@imssbgci</td></funcinfo>
+			<funcinfo>sysFirewallNetConfig:default_values/0@@2-->3@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:read_ipsec_counter/2@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+			<funcinfo>chaServer:remove_data_for_internal_key/1@@2-->6@@xemihol xemihol</funcinfo>
+			<funcinfo>sysFirewall:allowed_sources_rules/2@@2-->5@@imssbgci</td></funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_netconf_edit_config_SUITE">
+	<group name="no_config">
+		<case name="netconf_03_023">
+			<funcinfo>sbgFtNetconfSupport:modify_dns_for_matedPair/3@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:delete_diameter_realm/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:delete_diameter/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:is_stam/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_diameter_realm/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:remove_config/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_diameter_instance/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:modify_host_domain_name/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnLib:make_moref/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnLib:check_ip_address/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnLib:validate_mask/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnAllowedSourcesProfile:check_profile_exist/1@@2-->4@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:read_ipsec_counter/2@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_netconf_ipv6_SUITE">
+	<group name="pcscf_both">
+		<case name="netconf_ipv6_11_1_001">
+			<funcinfo>sbgFtNetconfSupport:delete_sip_term_single/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:conn_list/4@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_netw_type/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_sip_path_by_mo/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_type_inet/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_blacklist_profile_id/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:is_stam/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:reset_sip_sig/3@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:lock_sip/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_sip_term_single/3@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_outgoing_proxy/3@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_config/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_sip_term_path_and_config/4@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_sip_netw_conn/3@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_sip_netw_conn/4@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnLib:make_moref/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnLib:validate_mask/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnLib:check_ip_address/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnLib:open_firewall/12@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnAllowedSourcesProfile:check_profile_exist/1@@2-->4@@imssbgci</td></funcinfo>
+			<funcinfo>sysFirewallNetConfig:is_profile/1@@2-->3@@imssbgci</td></funcinfo>
+			<funcinfo>sysFirewallNetConfig:default_values/0@@2-->3@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:read_ipsec_counter/2@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sysFirewall:allowed_sources_rules/2@@2-->5@@imssbgci</td></funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_rf_on_pcscf_SUITE">
+	<group name="pcscf_ext_bgf_ipv4">
+		<case name="sbg_cha_error_cases_009_pc_ags">
+			<funcinfo>sbgFtNetconfSupport:modify_dns_for_matedPair/3@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_bgf_status/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:conn_list/4@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:delete_diameter/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_dns_ip/3@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_netw_type/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_bgf_status/4@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_sip_path_by_mo/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_type_inet/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_blacklist_profile_id/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:is_stam/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_diameter_realm/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:remove_config/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:stp/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_sip_term_single/3@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_outgoing_proxy/3@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_sip_term_path_and_config/4@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_address_to_network_mapping/3@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_sip_netw_conn/3@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:initial_config/4@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_diameter_instance/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_sip_netw_conn/4@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:poll_with_mfa/4@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:modify_host_domain_name/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:which_scenario/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:initial_config_sgc/3@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnDNS:run_after_commit/3@@4-->4@@xemihol</funcinfo>
+			<funcinfo>sgnLib:make_moref/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnLib:check_ip_address/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnLib:validate_mask/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnLib:open_firewall/12@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>sgnAllowedSourcesProfile:check_profile_exist/1@@2-->4@@imssbgci</td></funcinfo>
+			<funcinfo>sysFirewallNetConfig:is_profile/1@@2-->3@@imssbgci</td></funcinfo>
+			<funcinfo>sysFirewallNetConfig:default_values/0@@2-->3@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:read_ipsec_counter/2@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+			<funcinfo>chaServer:remove_data_for_internal_key/1@@2-->6@@xemihol xemihol</funcinfo>
+			<funcinfo>chaServer:update_charging_servers/1@@2-->6@@xemihol xemihol</funcinfo>
+			<funcinfo>chaServer:remove_data_for_internal_key/2@@2-->6@@xemihol xemihol</funcinfo>
+			<funcinfo>chaServer:handle_charging_server_up/1@@2-->6@@xemihol xemihol</funcinfo>
+			<funcinfo>chaServer:handle_charging_server_down/1@@2-->6@@xemihol xemihol</funcinfo>
+			<funcinfo>diaConfServer:update_alarm/5@@3-->2@@xemihol xemihol</funcinfo>
+			<funcinfo>sysFirewall:allowed_sources_rules/2@@2-->5@@imssbgci</td></funcinfo>
+			<funcinfo>oabGwAction:al/7@@6-->4@@etxtopi eybccfk</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_roaming_SUITE">
+	<group name="timerB_ibcf">
+		<case name="roaming_timerB_ibcf_004">
+			<funcinfo>sbgFtNetconfSupport:get_bgf_status/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_ip_address_tuple/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:do_modify_sip_netw_conn_params/4@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_bgf_status/4@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_sip_path_by_mo/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_type_inet/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_sip_netw_conn/5@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_role_type/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:poll_with_mfa/4@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:ip_address_as_string/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:which_scenario/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnLib:make_moref/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>oabGwAction:al/7@@6-->4@@etxtopi eybccfk</funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_roaming_SUITE">
+	<group name="timerB_ibcf">
+		<case name="roaming_timerB_ibcf_005">
+			<funcinfo>sbgFtNetconfSupport:get_bgf_status/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_ip_address_tuple/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:do_modify_sip_netw_conn_params/4@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_bgf_status/4@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_sip_path_by_mo/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_type_inet/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_sip_netw_conn/5@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_role_type/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:poll_with_mfa/4@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:ip_address_as_string/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:which_scenario/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnLib:make_moref/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>oabGwAction:al/7@@6-->4@@etxtopi eybccfk</funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_roaming_SUITE">
+	<group name="timerB_ibcf">
+		<case name="roaming_timerB_ibcf_006">
+			<funcinfo>sbgFtNetconfSupport:get_bgf_status/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_ip_address_tuple/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:do_modify_sip_netw_conn_params/4@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_bgf_status/4@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:create_sip_path_by_mo/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_type_inet/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_sip_netw_conn/5@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_role_type/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:poll_with_mfa/4@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:ip_address_as_string/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:which_scenario/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnLib:make_moref/2@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>oabGwAction:al/7@@6-->4@@etxtopi eybccfk</funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+		</case>
+	</group>
+</suite>
+<suite name="sbg_ft_srtp_with_dtls_SUITE">
+	<group name="srtp_ipv4_e2ae">
+		<case name="sbg_dtls_srtp_cont_5_005">
+			<funcinfo>sbgFtNetconfSupport:get_bgf_status/1@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:check_bgf_status/4@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtNetconfSupport:get_type_inet/2@@2-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:is_stam/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run_check_result/1@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:run/2@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:get_log_filter/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:poll_with_mfa/4@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sbgFtSupport:which_scenario/0@@4-->1@@imssbgci</td></funcinfo>
+			<funcinfo>sgnCounters:read_ipsec_counter/2@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnCounters:update_all_ipsec_counters/0@@4-->6@@xemihol eyaodzh</funcinfo>
+			<funcinfo>sgnI:update_all_ipsec_counters/0@@3-->12@@xemihol</funcinfo>
+			<funcinfo>pmfLib:get_measurements/1@@5-->3@@xemihol eyaodzh</funcinfo>
+			<funcinfo>oabGwAction:al/7@@6-->4@@etxtopi eybccfk</funcinfo>
+			<funcinfo>sgnLib:check_ip_range/4@@24-->17@@xemihol eusmakh eusmakh</funcinfo>
+		</case>
+	</group>
+</suite>
+</suites>

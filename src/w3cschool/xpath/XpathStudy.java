@@ -28,7 +28,7 @@ public class XpathStudy{
 		//要使用命名空间 把namespaceAware设成true 默认为false
 		factory.setNamespaceAware(true);
 		DocumentBuilder builder = factory.newDocumentBuilder();
-		doc = builder.parse("C:/WorkSpace/StudyOnline/src/jianjian/xpath/com/sensorml.xml");
+		doc = builder.parse("H:/Developer/Java work space/StudyOnline/src/w3cschool/xpath/sensorml.xml");
 		XPathFactory xFactory = XPathFactory.newInstance();
 		xpath = xFactory.newXPath();
 		//配置定义的命名空间上下文
